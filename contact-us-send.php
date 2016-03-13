@@ -1,4 +1,4 @@
 <?php
 
-mail('conceptisen@gmail.com', 'Sample Contact Us', 'coucou1');
+mail('helene.mazars@isen-lille.fr', 'Sample Contact Us', 'coucou3');
 ?>
