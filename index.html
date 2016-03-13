@@ -456,42 +456,18 @@
   </section>
   <!-- End Testimonial section -->
   
-  <?php
-//if "email" variable is filled out, send email
-  if (isset($_REQUEST['email']))  {
-  
-  //Email information
-  $admin_email = "helene.mazars@isen-lille.fr";
-  $email = $_REQUEST['email'];
-  $subject = $_REQUEST['subject'];
-  $comment = $_REQUEST['comment'];
-  
-  //send email
-  mail($admin_email, "$subject", $comment, "From:" . $email);
-  
-  //Email response
-  echo "Thank you for contacting us!";
-  }
-  
-  //if "email" variable is not filled out, display the form
-  else  {
-  }
-?>
-
- <form method="post">
-  Email: <input name="email" type="text" /><br />
-  Subject: <input name="subject" type="text" /><br />
-  Message:<br />
-  <textarea name="comment" rows="15" cols="40"></textarea><br />
-  <input type="submit" value="Submit" />
-  </form>
-  
-<?php
-  }
-?>
-
-
-
+<form action="contact-us-send.php" method="post">
+<ul>
+	<li><label for="name">Your Name</label> 
+	    <input id="name" name="name" type="text" /></li>
+	<li><label for="email">Your Email</label>
+	    <input id="email" name="email" type="text" /></li>
+	<li><label for="comment">Your Name</label>
+	    <textarea id="comment" name="comment"></textarea></li>
+	<li><input id="submit" name="submit" type="submit" 
+		value="Click to Send Comments" /></li>
+</ul>
+</form>
 
   
   <!-- Start Contact section -->
