@@ -17,14 +17,6 @@ $msg = 'Name: ' .$_POST['name'] .
 mail('helene.mazars@isen-lille.fr', 
 	'Sample Comments', $msg);
 
-// exit this script - just to make sure nothing else gets run
-exit(0);
-
-
-?>
-
-<?php
-
 //on affiche un petit message
 			echo '<body onLoad="alert(\'Merci de votre message, on vous répondra dès que possible\')">';
 			
