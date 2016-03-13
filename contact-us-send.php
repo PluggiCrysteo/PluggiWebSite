@@ -1,11 +1,15 @@
+
+<meta charset="utf-8">
+
+
 <?php
 
 // submitted to server through form
 
 // build the email message by using
 // info received by the HTML form
-$msg = 'Name: ' .$_POST['name'] ."\n"
-	'Email: ' .$_POST['email'] ."\n"
+$msg = 'Name: ' .$_POST['name'] .
+	'Email: ' .$_POST['email'] .
 	'Comment: ' ."\n" .$_POST['comment'];
 
 // send email using PHP's built in 
@@ -13,11 +17,18 @@ $msg = 'Name: ' .$_POST['name'] ."\n"
 mail('helene.mazars@isen-lille.fr', 
 	'Sample Comments', $msg);
 
-// redirect to the thank you page
-header('location: index.html');
-
 // exit this script - just to make sure nothing else gets run
 exit(0);
 
+
+?>
+
+<?php
+
+//on affiche un petit message
+			echo '<body onLoad="alert(\'Merci de votre message, on vous répondra dès que possible\')">';
+			
+			// puis on le redirige vers la page d'accueil	
+			echo '<meta http-equiv="refresh" content="0;URL=index.html">';
 
 ?>
