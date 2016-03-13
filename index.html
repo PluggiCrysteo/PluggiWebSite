@@ -171,7 +171,7 @@
             <div class="row">
               <div class="col-md-5">
                 <div class="about-left wow fadeInLeft">
-                  <img class="img-responsive" src="assets/images/pluggi/photo02.jpg" alt="img">
+                  <img class="img-responsive" src="assets/images/pluggi/photo02reduit.jpg" alt="img">
                 </div>
               </div>
               <div class="col-md-7 col-sm-6 col-xs-12">
@@ -179,20 +179,18 @@
                   <div class="title-area">
                     <h2 class="tittle">Au sujet de <span>Pluggi</span></h2>
                     <span class="tittle-line"></span>
-
-            <!-- Start counter area -->
-            <div class="counter-area">
-              <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="single-counter">
-                  <span class="fa fa-users"></span>
-                  <div class="counter-count">
-                    <span class="counter">1096</span>
-                    Nombre d'entrée par effcation depuis 24 heures
-                  </div>
-                </div>
-              </div>    
-            </div>
- 				
+						<!-- Start counter area -->
+						<div class="counter-area">
+						  <div class="col-md-3 col-sm-6 col-xs-6">
+							<div class="single-counter">
+							  <span class="fa fa-users"></span>
+							  <div class="counter-count">
+								<span class="counter">1096</span>
+								Nombre d'entrée par effcation depuis 24 heures
+							  </div>
+							</div>
+						  </div>    
+						</div>
                   </div>
                 </div>
               </div>
@@ -416,7 +414,7 @@
 
   <!-- Start Testimonial section -->
   <section id="testimonial">
-    <img src="assets/images/testimonial-bg.jpg" alt="img">
+    <img src="assets/images/section/news02.jpg" alt="img">
     <div class="counter-overlay">
       <div class="container">
         <div class="row">
@@ -457,6 +455,42 @@
     </div> 
   </section>
   <!-- End Testimonial section -->
+  
+  <?php
+//if "email" variable is filled out, send email
+  if (isset($_REQUEST['email']))  {
+  
+  //Email information
+  $admin_email = "helene.mazars@isen-lille.fr";
+  $email = $_REQUEST['email'];
+  $subject = $_REQUEST['subject'];
+  $comment = $_REQUEST['comment'];
+  
+  //send email
+  mail($admin_email, "$subject", $comment, "From:" . $email);
+  
+  //Email response
+  echo "Thank you for contacting us!";
+  }
+  
+  //if "email" variable is not filled out, display the form
+  else  {
+  }
+?>
+
+ <form method="post">
+  Email: <input name="email" type="text" /><br />
+  Subject: <input name="subject" type="text" /><br />
+  Message:<br />
+  <textarea name="comment" rows="15" cols="40"></textarea><br />
+  <input type="submit" value="Submit" />
+  </form>
+  
+<?php
+  }
+?>
+
+
 
 
   
@@ -542,7 +576,8 @@
   <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
   <!-- mixit slider -->
   <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
- 
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
   <!-- Wow animation -->
   <script type="text/javascript" src="assets/js/wow.js"></script> 
 
