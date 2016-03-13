@@ -1,4 +1,4 @@
 <?php
 
-mail('helene_mouton@hotmail.fr', 'Sample Contact Us', 'coucou');
+mail('helene_mouton@hotmail.fr', 'Sample Contact Us', 'coucou1');
 ?>
