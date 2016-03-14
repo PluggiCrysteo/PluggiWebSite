@@ -1674,8 +1674,8 @@ img{
 }
 .footer-social a.dribbble:hover{
 	color: #fff;
-	background-color: #ea4c89;
-	border-color: #ea4c89;
+	background-color:rgba(151, 0, 1, 0.8);
+	border-color: rgba(151, 0, 1, 0.8);
 }
 .footer-bottom{
 	display: inline;
@@ -2436,8 +2436,8 @@ img{
 	}
 	.navbar-default .navbar-toggle:hover,
 	.navbar-default .navbar-toggle:focus{
-		background-color: #00d999;
-		border-color: #00d999;
+		background-color: rgba(151, 0, 1, 0.8);
+		border-color: rgba(151, 0, 1, 0.8);
 		color: #fff;
 	}
 	.navbar-default .navbar-toggle:hover .icon-bar,
