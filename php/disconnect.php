@@ -2,6 +2,8 @@
 include("Identification.php");
 $identification->disConnectUser();
 
-header('Location: ../index.html');
+
+
+header('Location: ../vitrine.php?lang='.$_GET['lang']);
 
 die;

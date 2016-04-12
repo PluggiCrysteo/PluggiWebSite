@@ -1,9 +1,12 @@
-<!-- Cahier des charges : il faudra que je mette l'option like, résolu, et le moniteur de recherche voilà -->
+<!-- Cahier des charges : il faudra que je mette l'option like, résolu, et le moniteur de r voilà -->
 
 <html>        
     <body>
 	
-		<form action="membre.php?page=Recherche sujet" method='post'>
+	</br>
+	</br>
+	
+		<form action="membre.php?page=recherche_sujet&lang=fr" method='post'>
 			<table align="center" border="0">
 			<label for name="recherche">Rechercher un autre sujet</label>
 			<td colspan="2" align="center"><input type="text" name="recherche" value=""></td>
@@ -41,12 +44,12 @@
 				<br/>
 				<br/>	
 			</p>
-			<em><a href="membre.php?page=commentaires&billet=<?php echo $donnees['id']; ?>">Commentaires</a></em>
+			<em><a href="membre.php?page=commentaires&billet=<?php echo $donnees['id']; ?>&lang=fr">Commentaires</a></em>
 			</div>
 		<?php	
 		}
 		?>
-		<form action="membre.php?page=Nouveau sujet" method='post'>
+		<form action="membre.php?page=nouveau_sujet&lang=fr" method='post'>
 			<table align="center" border="0">
 			<td colspan="2" align="center"><input type="submit" class="button button-default" value="   Ajouter un nouveau sujet   "></td>
 			</table>
