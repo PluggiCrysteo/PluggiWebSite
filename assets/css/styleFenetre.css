@@ -22,7 +22,7 @@ body {font-family: 'Source Sans Pro', sans-serif; font-size: 14px; color: #666;}
 	background: #FFF;
 }
 
-.btn {padding:10px 20px; background: #F4F4F2;}
+.btn {padding:10px 20px; background: #F4F4F2;margin-left: 10px;}
 
 .btn-red {
     border-color: #fff;
@@ -76,7 +76,7 @@ a.btn_red {color: #FFF;}
 .user_login input[type="checkbox"]+label {float:left;}
 
 .user_login .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
-.forgot_password {display:block; margin: 20px 0 10px; clear: both; overflow: hidden; text-decoration: none; color:#ED6347;}
+.forgot_password {display:block; margin: 20px 0 10px; clear: both; overflow: hidden; text-decoration: none; color:#970001;}
 
 /* User Register Form */
 .user_register {display: none;}

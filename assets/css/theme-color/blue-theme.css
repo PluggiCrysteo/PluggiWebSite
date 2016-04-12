@@ -1,0 +1,241 @@
+/*=======================================
+Template Design By MarkUps.
+Author URI : http://www.markups.io/
+========================================*/
+
+.header-content h2 span {
+  color: #0018B0;
+}
+.knowmore-btn:hover,
+.knowmore-btn:focus,
+.download-btn:hover,
+.download-btn:focus{
+  background-color: #0018B0;
+  border-color: #0018B0;
+}
+.main-nav li a:hover{
+  color: #0018B0;
+} 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #0018B0;
+}
+.search-area input[type="text"]:focus:hover {
+  border-bottom: 1px solid #0018B0;  
+}
+.search-area input[type="text"]:focus {
+  border-bottom: 1px solid #0018B0;  
+}
+.search-area input[type="submit"] {
+  background-color: #0018B0;  
+}
+.tittle>span{
+  color: #0018B0;
+}
+.single-wc-content span {
+  border: 1px solid #0018B0;
+  color: #0018B0;
+}
+.single-wc-content:hover .wc-icon{
+  background-color: #0018B0;
+}
+.single-wc-content:hover .wc-tittle{
+  border-bottom: 2px solid #0018B0;  
+}
+.about-left {
+  background-color: #0018B0;  
+}
+.button-default {  
+  border: 2px solid #0018B0 !important;
+  color: #0018B0 !important;
+}
+.button-default:hover {
+  border-color: #0018B0;
+}
+.button-default:hover,
+.button-default:focus {
+  border-color: #0018B0;
+  background-color: #0018B0 !important;  
+}
+.introduction-btn {
+  background-color: rgba(255, 255, 0, 0.8);
+}
+.team-info {
+  background-color: rgba(255, 255, 0, 0.8);
+}  
+.team-grid li:hover .team-address p {
+  color: #0018B0;
+}
+.single-service {
+  border-bottom: 5px solid #0018B0;
+}
+.single-service:hover:after{  
+  background-color: #0018B0;
+}
+.single-service:hover .service-icon{
+  color: #0018B0;
+}
+.single-service:hover .service-title{
+  color: #0018B0;
+}
+.single-counter > span {
+  color: #0018B0;
+}
+.single-price .price-header {
+  background-color: #0018B0;
+ }
+ .single-price .price-header::after {
+  color: #0018B0;  
+}
+.single-price .price-amount {
+  border-bottom: 1px solid #0018B0;
+  color: #0018B0;  
+}
+.single-price a {
+  border-bottom: 1px solid #0018B0;
+}
+.standard-price a{
+  background-color: #0018B0;  
+}
+.single-from-blog .blog-title h2 a:hover,
+.single-from-blog .blog-title h2 a:focus{
+  color: #0018B0; 
+}
+.single-from-blog .blog-title .blog-admin{
+  color: #0018B0;
+}
+.single-from-blog .blog-footer a:hover,
+.single-from-blog .blog-footer a:focus { 
+  color: #0018B0;
+}
+.contact-form .form-control:focus {
+  border-color: #0018B0;   
+} 
+.portfolio-menu ul li:hover{
+  color: #0018B0;
+  border-color: #0018B0;  
+}
+.portfolio-social-icon a {
+  background-color: #0018B0;
+}
+.portfolio-title {
+  background-color: #0018B0;
+}
+.blog-banner-area .breadcrumb li.active{
+  color: #0018B0;
+}
+.blog-pagination > li > a:hover,
+.blog-pagination > li > span:hover,
+.blog-pagination > li > a:focus,
+.blog-pagination > li > span:focus{
+  background-color: #0018B0;  
+  border-color:#0018B0;  
+}
+.single-widget h2 {
+  border-left: 3px solid #0018B0;  
+}
+.popular-post-widget .media-heading a:hover,
+.popular-post-widget .media-heading a:focus{
+  color: #0018B0;  
+}
+.instagram-feed .slick-prev::before,
+.instagram-feed .slick-next::before {
+  color: #0018B0;  
+}
+.instagram-feed .slick-dots li.slick-active button{
+  background-color: #0018B0;
+}
+.instagram-feed .slick-dots li.slick-active button::before{
+  color: #0018B0
+}
+.comment-form .form-control:focus {
+  border-color: #0018B0;   
+} 
+.error-no {
+  border: 2px solid #0018B0;  
+}
+.error-no p {
+  color: #0018B0;
+}
+.blog-details-content>a:hover{
+  color: #0018B0;
+}
+.scrollToTop {  
+  color: #0018B0;  
+}
+.scrollToTop:hover,
+.scrollToTop:focus{  
+  background-color: #0018B0; 
+}
+.loader {  
+  background: #0018B0;
+  background: -moz-linear-gradient(left, #0018B0 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #0018B0 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #0018B0 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #0018B0 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #0018B0 10%, rgba(255, 255, 255, 0) 42%);  
+}
+.loader:before {
+  background: #0018B0; 
+}
+.footer-bottom p span{
+  color: #0018B0;
+}
+.blog-pagination > li > a,
+.blog-pagination > li > span {
+  color: #0018B0; 
+}
+.blog-pagination > li > a:hover,
+.blog-pagination > li > span:hover,
+.blog-pagination > li > a:focus,
+.blog-pagination > li > span:focus{
+  background-color: #0018B0;  
+  border-color:#0018B0;
+}
+
+/*=======================================
+pour le FAQ
+========================================*/
+
+.news p
+{
+    background-color:#CCCCCC;
+    margin-top:0px;
+}
+
+.news p1
+{
+    background-color:#CCCCCC;
+    margin-top:0px;
+}
+
+.news
+{
+    width:70%;
+    margin:auto;
+	border: 1px solid;
+}
+
+.form-control1 {
+  display: block;
+  width: 70%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}

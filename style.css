@@ -587,6 +587,8 @@ img{
 	transition: border-color 0.3s, background-color 0.3s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	background-color:#F0EFEF;
+	
 }
 .button-default::after {
 	content: attr(data-text);
@@ -736,6 +738,7 @@ img{
 .team-img-3 { 
 	width:120%;
 	height:115%;
+	
 	background-image: url(assets/images/partenaires/wapiti.png);
 }
 .team-img-4 { 
@@ -2990,5 +2993,61 @@ img{
 	width: 50px;
 	height: 50px;
 }
+
+/*======================///////////////
+			Pour l'image
+=====================///////////////////////*/
+
+
+#header .container{
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 80px 0;
+}
+.timer_box{
+    margin: 35px 24px;
+    display: inline-block;
+    padding: 20px 12px 0px 12px;
+    text-align: center;
+    width: 130px;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+.timer_box h1{
+    font-size: 48px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #970001;
+}
+.timer_box p{ margin-top: 0px;}
+#layer{
+    background-color: rgba(0, 0, 0, .2);
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+#slider{
+    width: 100%;
+    position: fixed;
+    background-color: #2c3e50; 
+    top: 0;
+    left: 0;
+    z-index: 0;
+    padding:0;
+}
+
+.mt {
+	margin-top: 30px;
+}
+
+.centered {
+	text-align: center;
+}
+
 
 
