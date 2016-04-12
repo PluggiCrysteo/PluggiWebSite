@@ -50,6 +50,7 @@ class Identification {
 
             if ($this->idUser) {
                 $_SESSION['id_user'] = $this->idUser;
+                echo "successful authentication<br />";
             }
         } else {
             $this->idUser = $_SESSION['id_user'];
@@ -59,7 +60,6 @@ class Identification {
         } else if ($this->idUser ==null){
             $this->printLogin();
         } else {
-			header('Location: ../404.php');  
             die ("you are not allowed");
         }
 
@@ -108,8 +108,9 @@ class Identification {
 
     private function printLogin(){
         $pageName;
+        echo "authentification failed";
         ?>
-        <meta http-equiv="refresh" content="5; URL=../404_idenification.php">
+        <a href="index.html">Retour vers la page d'identification</a>
         <?php
         //include "login.php";
         die;
