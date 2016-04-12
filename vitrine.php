@@ -570,7 +570,7 @@
 		<section class="popupBody">
 		<!-- Username & Password Login form -->
 			<div class="social_login">
-				<form action = "compte/membre.php?page=accueil?>" method="POST">
+				<form action = "compte/membre.php?page=accueil&lang=<?php echo $_GET['lang']?>" method="POST">
 					<label><?php echo TXT_8_LOGIN_1; ?></label>
 					<input type="text" name="email"/>
 					<br />
