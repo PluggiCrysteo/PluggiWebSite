@@ -1,6 +1,6 @@
 <?php
 
-require_once '/home/puggi/getConnectionObject.php';
+require_once ('/home/puggi/getConnectionObject.php');
 
 $bdd = Database::getDb();
 
