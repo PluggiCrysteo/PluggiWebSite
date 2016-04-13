@@ -586,7 +586,7 @@
 			</div>
 			<!-- Register Form -->
 			<div class="user_register">
-				<form action = "php/addUser.php" method="POST">
+				<form action = "php/addUser.php?lang=<?php echo $_GET['lang']?>" method="POST">
 					<label><?php echo TXT_8_NEW_1; ?></label>
 					<input type="text" name="name"/>
 					<label><?php echo TXT_8_NEW_2; ?></label>
@@ -655,7 +655,7 @@
         <div class="col-md-8 col-sm-6 col-xs-12">
           <div class="contact-right wow fadeInRight">
             <h2><?php echo TXT_7_TITRE2; ?></h2>
-            <form action="php/contact-us-send.php" method="post" class="contact-form">
+            <form action="php/contact-us-send.php?lang=<?php echo $_GET['lang']?>" method="post" class="contact-form">
               <div class="form-group">                
                 <input type="text" class="form-control" placeholder=<?php echo TXT_7_NAME; ?> id="name" name="name">
               </div>

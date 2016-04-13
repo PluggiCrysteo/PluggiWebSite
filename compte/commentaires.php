@@ -79,7 +79,7 @@
 				}
 			?>
 			<div class="note">
-				<form action="membre.php?page=commentaires&billet=<?php echo $_GET['billet']?>&aime=oui&ID=<?php echo $donnees['billet']?>" method='post' enctype="multipart/form-data">
+				<form action="membre.php?page=commentaires&billet=<?php echo $_GET['billet']?>&aime=oui&ID=<?php echo $donnees['billet']?>&lang=<?php echo $_GET['lang']?>" method='post' enctype="multipart/form-data">
 					<table align="center" border="0">
 					<td colspan="2" align="center"><input type="submit" class="button button-default" value=<?php echo TXT_1_COMMENTAIRES_BTN; ?>></td>
 					</table>
@@ -87,7 +87,7 @@
 	
 			<center><?php echo "Nombre de likes : ".$donnees['compteur']; ?></center>
 	
-			<form action="membre.php?page=commentaires&billet=<?php echo $_GET['billet']?>&aime=pas&ID=<?php echo $donnees['billet']?>" method='post' enctype="multipart/form-data">
+			<form action="membre.php?page=commentaires&billet=<?php echo $_GET['billet']?>&aime=pas&ID=<?php echo $donnees['billet']?>&lang=<?php echo $_GET['lang']?>" method='post' enctype="multipart/form-data">
 				<table align="center" border="0">
 				<td colspan="2" align="center"><input type="submit" value=<?php echo TXT_2_COMMENTAIRES_BTN; ?> class="button button-default"></td>
 				</table>

@@ -23,14 +23,6 @@ if ($_FILES['monfichier']['error'] == UPLOAD_ERR_NO_FILE) {
 	// Il faudra tout de même contrôler ce qui vous est envoyé
 }
 
-
-// on affiche un petit message
-echo '<body onLoad="alert(\'Merci de votre message...\')">';
-// puis on le redirige vers la page d'accueil
-echo '<meta http-equiv="refresh" content="0;URL=membre.php?page=Forum&lang=fr">';
-
-
-
 if ($_GET["lang"]=='fr') {
 	// on affiche un petit message
 	echo '<body onLoad="alert(\'Merci de votre message...\')">';

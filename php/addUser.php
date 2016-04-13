@@ -17,11 +17,18 @@ $password=$_POST['password'];
 
  if (empty($name) || empty ($first_name) || empty ($number) || empty ($email) || empty ($password )) {
 		
-	//on affiche un petit message
-	echo '<body onLoad="alert(\'Au moins une information manque...\')">';
-
-	// puis on le redirige vers la page d'accueil	
-	echo '<meta http-equiv="refresh" content="0;URL=../index.php">';
+	if ($_GET["lang"]=='fr') {
+		// on affiche un petit message
+		echo '<body onLoad="alert(\'Au moins une information manque...\')">';
+		// puis on le redirige vers la page d'accueil
+		echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=fr">';
+	}
+	else {
+		// on affiche un petit message
+		echo '<body onLoad="alert(\'Au moins une information manque...\')">';
+		// puis on le redirige vers la page d'accueil
+		echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=en">';
+	}
 	
     } else {
        
@@ -33,11 +40,18 @@ $password=$_POST['password'];
             }
             if ($testAdresseMail!=0) {
 
-				//on affiche un petit message
-				echo '<body onLoad="alert(\'Tu es déjà dans la base de données\')">';
-
-				// puis on le redirige vers la page d'accueil	
-				echo '<meta http-equiv="refresh" content="0;URL=../index.php">';
+					if ($_GET["lang"]=='fr') {
+						// on affiche un petit message
+						echo '<body onLoad="alert(\'Tu es déjà dans la base de données\')">';
+						// puis on le redirige vers la page d'accueil
+						echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=fr">';
+					}
+					else {
+						// on affiche un petit message
+						echo '<body onLoad="alert(\'Tu es déjà dans la base de données\')">';
+						// puis on le redirige vers la page d'accueil
+						echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=en">';
+					}
 				
                 } 
 				
@@ -48,21 +62,37 @@ $password=$_POST['password'];
 						{
 							$testPluggi=$testPluggi+1;
 							if ($donnees['user_id']!=NULL) {
-								//on affiche un petit message
-								echo '<body onLoad="alert(\'Votre Pluggi a déjà été identifié\')">';
 
-								// puis on le redirige vers la page d'accueil	
-								echo '<meta http-equiv="refresh" content="0;URL=../index.php">';
+								if ($_GET["lang"]=='fr') {
+									// on affiche un petit message
+									echo '<body onLoad="alert(\'Votre Pluggi a déjà été identifié\')">';
+									// puis on le redirige vers la page d'accueil
+									echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=fr">';
+								}
+								else {
+									// on affiche un petit message
+									echo '<body onLoad="alert(\'Votre Pluggi a déjà été identifié\')">';
+									// puis on le redirige vers la page d'accueil
+									echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=en">';
+								}
 
 								exit();								
 							}
 						}
 						if ($testPluggi==0) {
-							//on affiche un petit message
-							echo '<body onLoad="alert(\'Le numéro de votre Pluggi est incorrecte\')">';
 
-							// puis on le redirige vers la page d'accueil	
-							echo '<meta http-equiv="refresh" content="0;URL=../index.php">';
+							if ($_GET["lang"]=='fr') {
+								// on affiche un petit message
+								echo '<body onLoad="alert(\'Le numéro de votre Pluggi est incorrect\')">';
+								// puis on le redirige vers la page d'accueil
+								echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=fr">';
+							}
+							else {
+								// on affiche un petit message
+								echo '<body onLoad="alert(\'Le numéro de votre Pluggi est incorrecte\')">';
+								// puis on le redirige vers la page d'accueil
+								echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=en">';
+							}
 						}
 						else {
 		
@@ -88,10 +118,18 @@ $password=$_POST['password'];
 					
 							$reponse = $bdd->query('UPDATE pluggi_profile SET user_id="'.$userId.'" WHERE pluggi_number="'.$_POST['number'].'"');
 							
-							//on affiche un petit message
-							echo '<body onLoad="alert(\'Votre compte a bien été enregistré\')">';
-								// puis on le redirige vers la page d'accueil	
-							echo '<meta http-equiv="refresh" content="0;URL=../index.php">';		
+							if ($_GET["lang"]=='fr') {
+								// on affiche un petit message
+								echo '<body onLoad="alert(\'Votre compte a bien été enregistré\')">';
+								// puis on le redirige vers la page d'accueil
+								echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=fr">';
+							}
+							else {
+								// on affiche un petit message
+								echo '<body onLoad="alert(\'Votre compte a bien été enregistré\')">';
+								// puis on le redirige vers la page d'accueil
+								echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=en">';
+							}		
 						}
 					}
 				}

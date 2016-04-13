@@ -28,7 +28,7 @@ else {
 	//on affiche un petit message
 	echo '<body onLoad="alert(\'Votre sujet à bien été enregistrer...\')">';
 	// puis on le redirige vers la page d'accueil
-	echo '<meta http-equiv="refresh" content="0;URL=membre.php?page=Forum&lang=fr">';
+	echo '<meta http-equiv="refresh" content="0;URL=membre.php?page=Forum&lang=en">';
 }
 
 ?>

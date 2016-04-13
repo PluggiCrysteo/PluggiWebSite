@@ -61,8 +61,21 @@ class Identification {
         } else if ($this->idUser ==null){
             $this->printLogin();
         } else {
-			header('Location: ../404.php');  
-            die ("you are not allowed");
+		
+				if ($_GET["lang"]=='fr') {
+					// on affiche un petit message
+					echo '<body onLoad="alert(\'Vous n\'êtes pas autorisé à accéder à cette page\')">';
+					// puis on le redirige vers la page d'accueil
+					echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=fr">';
+				}
+				else {
+					// on affiche un petit message
+					echo '<body onLoad="alert(\'Vous n\'êtes pas autorisé à accéder à cette page\')">';
+					// puis on le redirige vers la page d'accueil
+					echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=en">';
+				}
+	
+            die;
         }
 
     }
@@ -110,12 +123,18 @@ class Identification {
 
     private function printLogin(){
         $pageName;
-		//on affiche un petit message
-		echo '<body onLoad="alert(\'Les informations rensignées sont fausses..\')">';
-
-		// puis on le redirige vers la page d'accueil	
-		echo '<meta http-equiv="refresh" content="0;URL=../index.php">';
-        //include "login.php";
+		if ($_GET["lang"]=='fr') {
+			// on affiche un petit message
+			echo '<body onLoad="alert(\'Les informations renseignées sont fausses...\')">';
+			// puis on le redirige vers la page d'accueil
+			echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=fr">';
+		}
+		else {
+			// on affiche un petit message
+			echo '<body onLoad="alert(\'Les informations renseignées sont fausses...\')">';
+			// puis on le redirige vers la page d'accueil
+			echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=en">';
+		}
         die;
     }
 

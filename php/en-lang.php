@@ -37,9 +37,11 @@
 	
 	define('TXT_6_DIV1', 'Pluggi meets the Ilôt 7 of Humanicité.');
 	define('TXT_6_DIV1_LEGEND', 'Humanicité\'s Workshops');
+	define('TXT_DATE_1', 'date : la semaine du 18 avril');
 		
 	define('TXT_6_DIV2', 'Pluggi will participate in the Maker Fair of Paris.');
 	define('TXT_6_DIV2_LEGEND', 'Maker Fair Paris');
+	define('TXT_DATE_2', 'date : 30 avril et 1er mai');
 	
 	//---------------------------------------------------------
   	// enquete 

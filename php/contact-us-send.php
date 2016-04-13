@@ -19,11 +19,18 @@ mail('helene.mazars@isen-lille.fr',
 	
 mail('crysteo@isen-lille.fr', 
 	'Sample Comments', $msg);	
-
-//on affiche un petit message
-			echo '<body onLoad="alert(\'Merci de votre message, on vous répondra dès que possible\')">';
-			
-			// puis on le redirige vers la page d'accueil	
-			echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=fr">';
+	
+	if ($_GET["lang"]=='fr') {
+		// on affiche un petit message
+		echo '<body onLoad="alert(\'Merci de votre message, on vous répondra dès que possible\')">';
+		// puis on le redirige vers la page d'accueil
+		echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=fr">';
+	}
+	else {
+		// on affiche un petit message
+		echo '<body onLoad="alert(\'Merci de votre message, on vous répondra dès que possible\')">';
+		// puis on le redirige vers la page d'accueil
+		echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=en">';
+	}
 
 ?>
