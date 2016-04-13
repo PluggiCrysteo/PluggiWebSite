@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+
 <?php
 
 session_start();
@@ -108,9 +110,11 @@ class Identification {
 
     private function printLogin(){
         $pageName;
-        ?>
-        <meta http-equiv="refresh" content="5; URL=../404.php?lang=fr">
-        <?php
+		//on affiche un petit message
+		echo '<body onLoad="alert(\'Les informations rensignées sont fausses..\')">';
+
+		// puis on le redirige vers la page d'accueil	
+		echo '<meta http-equiv="refresh" content="0;URL=../index.php">';
         //include "login.php";
         die;
     }
