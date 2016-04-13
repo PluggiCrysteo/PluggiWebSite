@@ -3,6 +3,10 @@
 <?php
  	 require("php/decide-lang.php");
  ?>
+ 
+ <?php
+include_once('php/Identification.php');
+?>
 	 
 	 
 <html lang="en">
@@ -248,13 +252,32 @@
   
 
   <!-- Start parternship action -->
+
   <section id="parternship">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="team-area">
             <div class="title-area">
-              <h2 class="tittle"><?php echo TXT_4_TITRE; ?></h2>
+              <h2 class="tittle"><?php echo TXT_4_TITRE; ?>
+			  
+			      ici
+  
+  
+  
+  <?php
+
+	$reponse = $bdd->query('SELECT first_name FROM users WHERE id_user=1');
+	
+	$ligne = $reponse->fetch();
+	
+	echo $ligne['first_name'];
+
+?>
+			  
+			  
+			  
+			  </h2>
               <span class="tittle-line"></span>
               <p></p>
             </div>
