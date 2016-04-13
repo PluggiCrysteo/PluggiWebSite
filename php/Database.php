@@ -1,6 +1,6 @@
 <?php
 
-include_once ('/home/pluggi/getConnectionObject.php');
+require_once ('/home/pluggi/getConnectionObject.php');
 
 $bdd = Database::getDb();
 
