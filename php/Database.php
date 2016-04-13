@@ -1,5 +1,7 @@
 <?php
 
+include (require_once '/home/puggi/getConnectionObject.php';);
+
 $bdd = Database::getDb();
 
 class Database {
@@ -16,6 +18,6 @@ class Database {
             );
         }
 
-        return self::$_db;
+        return getConnectionObject();
     }
 } 
