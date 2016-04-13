@@ -139,19 +139,7 @@
   <section id="pluggi">
     <div class="container">
 	
-	<?php
-	
-	include_once('php/Database.php');
-	
-	$reponse = $bdd->query('SELECT first_name FROM users WHERE id_user=7');
-	
-	$ligne = $reponse->fetch();
-	
-	echo "résultat de la requête : ";
-	
-	echo $ligne['first_name'];
-	
-	?>
+
       <div class="row">
         <div class="col-md-12">
           <!-- Start welcome area -->
