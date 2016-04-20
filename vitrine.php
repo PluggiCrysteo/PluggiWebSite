@@ -608,7 +608,7 @@
 			<!-- Register Form -->
 			<div class="forgot_password">
 				<form action = "php/password.php?lang=<?php echo $_GET['lang']?>" method="POST">
-					<label><?php echo TXT_8_OUBLIE_1; ?></label>
+					<label><?php echo TXT_8_OUBLI_1; ?></label>
 					<input type="text" name="email"/>
 					</br>
 					<div class="action_btns">

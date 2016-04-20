@@ -194,6 +194,8 @@ Si vous le souhaitez, un retour vous sera fait sur cette enquête.');
 	define('TXT_8_CHOIX_3', 'Forgot password ?');
 	define('TXT_8_CHOIX_4', 'Back');
 	define('TXT_8_CHOIX_5', 'Validate');
+	
+	define('TXT_8_OUBLI_1', 'Veuillez entrer votre adresse mail');
 	 
 	//---------------------------------------------------------
   	// contact 
@@ -218,23 +220,9 @@ Si vous le souhaitez, un retour vous sera fait sur cette enquête.');
 	define('TXT_7_SEND1', 'VALIDATE');
 	define('TXT_7_SEND2', 'SEND');
 	
-		//---------------------------------------------------------
+	//---------------------------------------------------------
   	// partie espace membre
   	//---------------------------------------------------------
-	 
-	//---------------------------------------------------------
-  	// 404
-  	//---------------------------------------------------------
-	
-	define('TXT_TITRE1_404', 'Erreur');
-	
-	define('TXT_TITRE2_404', 'Désolé');
-	
-	define('TXT_1_404', 'La page que vous demandez n\'est pas accessible.');
-	
-	define('TXT_2_404', 'La page que vous demandée n\'est pas accessible depuis votre compte ou n\'exite plus. Retour à la');
-	define('TXT_3_404', ' page d\'accueil');
-	define('TXT_4_404', '.');
 	
 	//---------------------------------------------------------
   	// membre
@@ -283,21 +271,21 @@ Si vous le souhaitez, un retour vous sera fait sur cette enquête.');
 	define('TXT_3_COMMENTAIRES', 'Entrer un nouveau commentaire : ');
 	define('TXT_4_COMMENTAIRES', 'Joindre une photo : ');
 	
-	define('TXT_5_COMMENTAIRES', 'le ');
-	define('TXT_6_COMMENTAIRES', 'par ');
+	define('TXT_5_COMMENTAIRES', 'the ');
+	define('TXT_6_COMMENTAIRES', 'by ');
 	
    	define('TXT_1_COMMENTAIRES_BTN', ' + ');
 	define('TXT_2_COMMENTAIRES_BTN', ' - ');
 	
-	define('TXT_3_COMMENTAIRES_BTN', 'Résolu');
-	define('TXT_4_COMMENTAIRES_BTN', 'Valider');
+	define('TXT_3_COMMENTAIRES_BTN', 'Solve');
+	define('TXT_4_COMMENTAIRES_BTN', 'Send');
 	
 	//---------------------------------------------------------
   	// recherche sujet 
   	//---------------------------------------------------------
 	
-	define('TXT_1_RECHERCHE', 'Derniers billets du blog :');
+	define('TXT_1_RECHERCHE', 'Last subjects :');
 	
-	define('TXT_2_RECHERCHE', 'Commentaires');
+	define('TXT_2_RECHERCHE', 'Comments');
 	 
  ?> 
