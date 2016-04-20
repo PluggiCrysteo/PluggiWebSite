@@ -138,8 +138,6 @@
     <!-- Enquête section -->
   <section id="pluggi">
     <div class="container">
-	
-
       <div class="row">
         <div class="col-md-12">
           <!-- Start welcome area -->
@@ -570,7 +568,7 @@
 		</header>
 		
 		<section class="popupBody">
-		<!-- Username & Password Login form -->
+			<!-- Username & Password Login form -->
 			<div class="social_login">
 				<form action = "compte/membre.php?page=accueil&lang=<?php echo $_GET['lang']?>" method="POST">
 					<label><?php echo TXT_8_LOGIN_1; ?></label>
@@ -583,8 +581,9 @@
 						<div class="one_half"><a href="#" class="btn newUser"></i><?php echo TXT_8_CHOIX_1; ?></a></div>
 						<button type="submit" class="btn btn-default"><?php echo TXT_8_CHOIX_2; ?></button>
 					</div>
+					</br>
+					<div class="one_half"><a href="#" class="btn-password forgotPassword"></i><?php echo TXT_8_CHOIX_3; ?></a></div>
 				</form>
-				<a href="#" class="forgot_password"><?php echo TXT_8_CHOIX_3; ?></a>
 			</div>
 			<!-- Register Form -->
 			<div class="user_register">
@@ -606,6 +605,18 @@
 					</div>
 				</form>
 			</div>
+			<!-- Register Form -->
+			<div class="forgot_password">
+				<form action = "php/password.php?lang=<?php echo $_GET['lang']?>" method="POST">
+					<label><?php echo TXT_8_OUBLIE_1; ?></label>
+					<input type="text" name="email"/>
+					</br>
+					<div class="action_btns">
+						<div class="one_half"><a href="#" class="btn User"></i> <?php echo TXT_8_CHOIX_4; ?></a></div>
+						<button type="submit" class="btn btn-default"><?php echo TXT_8_CHOIX_5; ?></button>
+					</div>
+				</form>
+			</div>
 		</section>	
 <script type="text/javascript">
 	$("#modal_trigger").leanModal({top : 150, overlay : 0.6, closeButton: ".modal_close" });
@@ -613,6 +624,7 @@
 	$(function(){
 		// Going to New User
 		$(".newUser").click(function(){
+			$(".forgot_password").hide();
 			$(".social_login").hide();
 			$(".user_register").show();
 			return false;
@@ -620,17 +632,25 @@
 
 		// Going to User
 		$(".User").click(function(){
+			$(".forgot_password").hide();
 			$(".social_login").show();
 			$(".user_register").hide();
 			return false;
 		});
+		
+		//Going to forget_password
+		$(".forgotPassword").click(function(){
+			$(".forgot_password").show();
+			$(".user_register").hide();
+			$(".social_login").hide();
+			return false;
+		});
 	})
 </script>
-</div>
+	</div>
+
+</section>
   <!-- End Login section -->  
-	  
-    </div>
-  </section>
   <!-- End service section -->
   
   <!-- Start Contact section -->
@@ -657,7 +677,7 @@
         <div class="col-md-8 col-sm-6 col-xs-12">
           <div class="contact-right wow fadeInRight">
             <h2><?php echo TXT_7_TITRE2; ?></h2>
-            <form action="php/contact-us-send.php?lang=<?php echo $_GET['lang']?>" method="post" class="contact-form">
+            <form action="php/contact-us-send.php" method="post" class="contact-form">
               <div class="form-group">                
                 <input type="text" class="form-control" placeholder=<?php echo TXT_7_NAME; ?> id="name" name="name">
               </div>

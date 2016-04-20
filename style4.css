@@ -1704,6 +1704,8 @@ img{
 
 .btn {padding:10px 20px; background: #F4F4F2;margin-left: 10px;}
 
+.btn-password {display:block; margin: 20px 0 10px; clear: both; overflow: hidden; text-decoration: none; color:#970001;}
+
 .btn-red {
     border-color: #fff;
     color: #222;
@@ -1767,6 +1769,14 @@ a.btn_red {color: #FFF;}
 
 .user_register .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
 
+/* Forget password Form */
+.forgot_password {display: none;}
+.forgot_password label {display: block; margin-bottom:5px; font-size:12px}
+.forgot_password input[type="text"], .forgot_password input[type="email"], .forgot_password input[type="password"] {display: block; width:100%; padding: 10px; border:1px solid #DDD; color:#666;text-align:center; font-size:12px}
+.forgot_password input[type="checkbox"] {float:left; margin-right:5px;}
+.forgot_password input[type="checkbox"]+label {float:left;}
+
+.forgot_password .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
 
 /*--------------------*/
 /* Nous contacter */
