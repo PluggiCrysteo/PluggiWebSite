@@ -64,11 +64,11 @@
 		
 		
         <div class="header-btn-area">
-          <a class="knowmore-btn" href="vitrine.php?lang=fr">Accéder au site en Français</a>
+          <a class="knowmore-btn" href="vitrine.php?lang=fr">Français</a>
 		  </br>
 		  </br>
 		  </br>
-		  <a class="knowmore-btn" href="vitrine.php?lang=en">Access the website in English</a>
+		  <a class="knowmore-btn" href="vitrine.php?lang=en">English</a>
         </div>
       </div>
 	  </div>

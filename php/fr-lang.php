@@ -35,9 +35,9 @@
 	
 	define('TXT_6_TITRE', 'Evènements à venir');
 	
-	define('TXT_6_DIV1', 'Pluggi part à la rencontre de l\'Ilôt 7 de l\'Humanicité.');
-	define('TXT_6_DIV1_LEGEND', 'Ateliers Humanicité');
-	define('TXT_DATE_1', 'date : la semaine du 18 avril');
+	define('TXT_6_DIV1', 'Soutenance du Projet.');
+	define('TXT_6_DIV1_LEGEND', '');
+	define('TXT_DATE_1', 'date : 28 avril');
 		
 	define('TXT_6_DIV2', 'Pluggi participera à la Maker Fair de Paris.');
 	define('TXT_6_DIV2_LEGEND', 'Maker Fair Paris');
@@ -172,6 +172,7 @@ Si vous le souhaitez, un retour vous sera fait sur cette enquête.');
 	
 	define('TXT_8_DIV2_TITRE', 'Application');
 	define('TXT_8_DIV2_TEXT', 'Téléchargez l\'application android et bénéficiez d\'un tutoriel très détaillé sur l\'installation de cette application.');
+	define('TXT_8_DIV2_TEXT1', 'Télécharger l\'applicatiion');
 	
 	define('TXT_8_DIV3_TITRE', 'FAQ');
 	define('TXT_8_DIV3_TEXT', 'Partagez vos expériences avec d\'autres utilisateurs.');

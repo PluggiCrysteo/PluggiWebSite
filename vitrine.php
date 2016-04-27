@@ -13,7 +13,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Pluggi</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="assets/images/icon/pluggi.png"/>
+    <link rel="shortcut icon" type="image/icon" href="assets/images/icon/crysteo.png"/>
     <!-- Font Awesome -->
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -110,7 +110,7 @@
                   <div class="single-slide">
                     <h2 class="tittle"><?php echo TXT_6_DIV1; ?></h2>
                     <div class="single-testimonial">
-                      <img class="testimonial-thumb1" src="assets/images/partenaires/humanicite.jpg" alt="img">
+                      <img class="testimonial-thumb1" src="assets/images/partenaires/isen-groupe.jpg" alt="img">
 					  <p><?php echo TXT_6_DIV1_LEGEND; ?></p>
                       <span><em><?php echo TXT_DATE_1; ?></em></span>
                       <span></span>
@@ -134,27 +134,6 @@
     </div> 
   </section>
   <!-- End News section -->    
-  
-    <!-- Enquête section -->
-  <section id="pluggi">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <!-- Start welcome area -->
-          <div class="welcome-area">
-            <div class="title-area">
-              <h2 class="tittle"><?php echo TXT_ENQUETE_TITRE1; ?><span><?php echo TXT_ENQUETE_TITRE2; ?></span></h2>
-              <span class="tittle-line"></span>
-              <p><p1><?php echo TXT_ENQUETE_TXT; ?></p1></p>
-			  <a target=blank href="https://docs.google.com/forms/d/1wgel41vf64w14GTzno3xZG_Fg_Mg777ZSeyFONx4_uE/viewform?c=0&w=1&usp=mail_form_link" class="button button-default"><?php echo TXT_ENQUETE_BUTTON; ?></a>
-			 <center> <img class="enquete" src="assets/images/partenaires/humanicite.jpg">  </center>
-		  </div>
-        </div>
-      </div>
-	</section>
-	
-	
-
   
   <!-- Start pluggi section -->
   <section id="pluggi">
@@ -544,6 +523,7 @@
                     <span class="fa fa-android service-icon"></span>
                     <h4 class="service-title"><?php echo TXT_8_DIV2_TITRE; ?></h4>
                     <p><?php echo TXT_8_DIV2_TEXT; ?></p>
+					<a href="assets/app-debug.apk"><?php echo TXT_8_DIV2_TEXT1; ?></a>
                   </div>
                 </li>
                 <li class="col-md-3 col-sm-6">
