@@ -64,13 +64,13 @@ class Identification {
 		
 				if ($_GET["lang"]=='fr') {
 					// on affiche un petit message
-					echo '<body onLoad="alert(\'Vous n\'êtes pas autorisé à accéder à cette page\')">';
+					echo '<body onLoad="alert(\'Vous n êtes pas autorisé à accéder à cette page\')">';
 					// puis on le redirige vers la page d'accueil
 					echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=fr">';
 				}
 				else {
 					// on affiche un petit message
-					echo '<body onLoad="alert(\'Vous n\'êtes pas autorisé à accéder à cette page\')">';
+					echo '<body onLoad="alert(\'Vous n êtes pas autorisé à accéder à cette page\')">';
 					// puis on le redirige vers la page d'accueil
 					echo '<meta http-equiv="refresh" content="0;URL=../vitrine.php?lang=en">';
 				}
