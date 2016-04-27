@@ -172,7 +172,7 @@ Si vous le souhaitez, un retour vous sera fait sur cette enquête.');
 	
 	define('TXT_8_DIV2_TITRE', 'Application');
 	define('TXT_8_DIV2_TEXT', 'Téléchargez l\'application android et bénéficiez d\'un tutoriel très détaillé sur l\'installation de cette application.');
-	define('TXT_8_DIV2_TEXT1', 'Télécharger l\'applicatiion');
+	define('TXT_8_DIV2_TEXT1', 'Télécharger l\'application');
 	
 	define('TXT_8_DIV3_TITRE', 'FAQ');
 	define('TXT_8_DIV3_TEXT', 'Partagez vos expériences avec d\'autres utilisateurs.');
